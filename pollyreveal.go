@@ -14,7 +14,7 @@ import (
 
 )
 
-const POLY = "aside"  // tag used by reveal js for
+const POLY = "aside"  // tag used by revealjs for
 const DEFAULT_VOICE = "Raveena"
 
 func main() {
@@ -23,10 +23,6 @@ func main() {
 	if err != nil  {
 		log.Fatal(err)
 	}
-	
-	fmt.Println("InputFile: ", inputFileName)
-	fmt.Println("OutputFile: ", outputFileName)
-	fmt.Println("VoiceId: ", voiceId)
 
   // Open the Input file
   inputFileHandle, err := os.Open(inputFileName)
