@@ -6,7 +6,7 @@ Usage: <code>pollyreveal [-v voiceId] inputFile outputFile</code>
 <br>`voiceId` should be a value supported by [AWS Polly](http://docs.aws.amazon.com/polly/latest/dg/API_Voice.html)<br>
 
 ## Installation
-Download the pollyreveal binary from the builds directory that matches your OS.  The application has been tested on OSX, and generally should work on Linux builds.  Windows build also provided, but unable to test.
+Download the pollyreveal binary from the builds directory.  It has been built for OSX.  For other OSes, you need to download the source and compile it using the GO compiler for your OS.  Hope to fix this shortly with mutiple OS builds.
 
 ## Details
 RevealJS provides `<aside>` tags for a developer to plug in speaker notes into the presentation.  `pollyreveal` can pre-process these tags and add `<audio>` tags to the presentation, with mp3 files generated locally that has natural voices of the text in the speaker notes.  The voice can be modified to suit the style or language based on the [AWS Polly](http://docs.aws.amazon.com/polly/latest/dg/API_Voice.html) documentation.
