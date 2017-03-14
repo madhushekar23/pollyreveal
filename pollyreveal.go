@@ -72,8 +72,9 @@ func main() {
           audioNode, err := generateAudioFile(localNode.Data, audioFileName, voiceId, pollySvc)
           if err != nil {
             log.Print(err)
-          }
-          node.Parent.InsertBefore(audioNode, node)
+          }  else  {
+          	node.Parent.InsertBefore(audioNode, node)
+					}
 
         }(polyNode, mp3FileName)
       }
