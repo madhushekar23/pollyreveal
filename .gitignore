@@ -1,4 +1,4 @@
 build.sh
 bigbuild.sh
-test/test/*
-test/plugin/*
+docs/test/*
+docs/plugin/*
